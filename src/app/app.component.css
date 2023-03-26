@@ -1,0 +1,132 @@
+.container {
+    margin: 0 auto;
+    padding-top: 1em;
+    max-width: 800px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  [class*="col-"] {
+    float: left;
+    padding: 2px;
+  }
+  
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+  
+  @media (max-width: 400px){
+    [class*="col-"] {
+        float: left;
+        padding: 2px;
+        width: 100% !important;
+        text-align: center;
+    }
+  }
+  
+  
+  .text-centered{
+    text-align: center;
+  }
+  
+  h3 {
+    background-color: rgb(47, 55, 77);
+    padding: 4px;
+    color: rgb(209, 209, 223);
+    text-align: center;
+  }
+  
+  .mensaje {
+    text-align: center;
+    color: rgb(81, 109, 109);
+  }
+  
+  table {
+    margin: 0 auto;
+    margin-top: 0.5em;
+  }
+  
+  .tg {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  .tg td {
+    border-style: none;
+    border-width: 1px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+  }
+  .tg th {
+    border-style: none;
+    background-color: rgb(47, 55, 77);
+    color: rgb(189, 207, 223);
+    border-width: 1px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+  }
+  .t-data {
+    width: 250px;
+  }
+  .tg .tg-b3sw {
+    background-color: #efefef;
+    font-weight: bold;
+    text-align: left;
+    vertical-align: top;
+  }
+  .tg .tg-0lax {
+    text-align: left;
+    vertical-align: top;
+  }
+  
+  tr {
+    border-bottom: 1px solid rgb(222, 219, 226);
+  }
+  
+  tr:hover {
+    background-color: rgb(221, 217, 223);
+    border-bottom: 1px solid rgb(197, 194, 201);
+  }
+  
+  button {
+    margin: 2px;
+    padding: 5px;
+    background-color: rgb(78, 58, 97);
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: rgb(53, 43, 71);
+  }
+  
+  .btnDelete {
+    margin-top: 0;
+    background-color: crimson;
+  }
+  
+  .btnDelete:hover {
+    background-color: rgb(179, 14, 47);
+  }
