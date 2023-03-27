@@ -28,7 +28,7 @@ export class PostService {
 
     this.filteredPosts = (text: string) =>
       createSelector(PostReducer.selectAll, (entities) => {
-        return this.sortPostbyName(entities).filter((post: Post) => post.nombre.includes(text));
+        return this.sortPostbyName(entities).filter((post: Post) => post.nombre.toLowerCase().includes(text.toLowerCase()));
       });
   }
 
